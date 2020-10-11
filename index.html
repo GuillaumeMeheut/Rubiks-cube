@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rubik's Cube</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reboot.css">
+    <link rel="stylesheet" href="css/cube.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+ 
+<body>
+
+    <nav>
+        <ul class="nav_ul">
+            <li class="nav_li nav_li1"><a class="nav_button nav_button1" href="#histoire">Histoire</a></li>
+            <li class="nav_li nav_li2"><a class="nav_button nav_button2" href="#resoudre">Débuter</a></li>
+            <li class="nav_li nav_li3"><a class="nav_button nav_button3" href="#timer">Timer</a></li>
+        </ul>
+    </nav>
+
+    <header class="histoire" id="histoire">
+        <svg class="logo" width="210" height="44" viewBox="0 0 210 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M209.733 44H97.5191C97.5191 44 97.5191 44 97.5191 41.0488C97.5191 38.7491 109.008 41.0488 109.008 34.6098C109.008 29.2439 97.5191 31.9268 97.5191 29.2439C97.5191 25.8229 97.5191 21.8592 97.5191 17.9756C97.5191 16.1476 85.4962 14.0691 85.4962 12.3415C85.4962 9.87402 85.4962 6.77031 85.4962 4.82927C85.4962 1.27987 97.5191 -3.8147e-06 97.5191 -3.8147e-06H209.733V44Z" fill="white"/>
+            <path d="M0 0H112.214C112.214 0 112.214 0 112.214 2.95122C112.214 5.25087 100.725 2.95122 100.725 9.39024C100.725 14.7561 112.214 12.0732 112.214 14.7561C112.214 18.1771 112.214 22.1408 112.214 26.0244C112.214 27.8524 124.237 29.9309 124.237 31.6585C124.237 34.126 124.237 37.2297 124.237 39.1707C124.237 42.7201 112.214 44 112.214 44H0V0Z" fill="#015DA7"/>
+            <path d="M210 44H112.214C112.214 44 112.214 44 112.214 41.0488C112.214 38.7491 122.225 41.0488 122.225 34.6098C122.225 29.2439 112.214 31.9268 112.214 29.2439C112.214 17.7073 112.214 -3.8147e-06 112.214 -3.8147e-06H210V44Z" fill="white"/>
+            <path d="M14.2681 34.3415H5.34232C5.04593 34.3415 4.89774 34.2041 4.89774 33.9294V32.1779C4.89774 31.9032 5.04593 31.7659 5.34232 31.7659H7.9414V12.2599H5.34232C5.04593 12.2599 4.89774 12.1225 4.89774 11.8478V10.0964C4.89774 9.82166 5.04593 9.68429 5.34232 9.68429H15.8754C18.2921 9.68429 20.2643 10.394 21.7918 11.8135C23.3421 13.21 24.1173 15.1102 24.1173 17.5141C24.1173 19.8952 23.3649 21.7496 21.8602 23.0775C20.3554 24.3824 18.2351 25.0349 15.4993 25.0349H10.9167V31.7659H14.2681C14.5417 31.7659 14.6785 31.9032 14.6785 32.1779V33.9294C14.6785 34.2041 14.5417 34.3415 14.2681 34.3415ZM10.9167 22.5967H15.3625C19.1927 22.5967 21.1078 20.9025 21.1078 17.5141C21.1078 15.7513 20.5606 14.4349 19.4663 13.5649C18.3947 12.6949 17.0382 12.2599 15.3967 12.2599H10.9167V22.5967Z" fill="black"/>
+            <path d="M44.1464 34.3415H41.1711C40.1907 34.3415 39.7006 33.8607 39.7006 32.8991V31.6285H39.598C38.6632 33.5974 36.8849 34.5819 34.263 34.5819C32.4391 34.5819 30.9914 34.0438 29.9198 32.9678C28.871 31.8689 28.3353 30.4151 28.3125 28.6064V19.7463H26.3632C26.0896 19.7463 25.9528 19.609 25.9528 19.3342V17.8576C25.9528 17.5828 26.0896 17.4455 26.3632 17.4455H29.6462C30.6266 17.4455 31.1167 17.9262 31.1167 18.8878V27.9196C31.1167 29.2475 31.4359 30.2777 32.0743 31.0103C32.7127 31.743 33.6474 32.1093 34.8786 32.1093C36.5429 32.1093 37.8538 31.4911 38.8114 30.2548C39.2218 29.7283 39.427 29.3734 39.427 29.1902V19.7463H37.5803C37.3067 19.7463 37.1699 19.609 37.1699 19.3342V17.8576C37.1699 17.5828 37.3067 17.4455 37.5803 17.4455H41.8209C42.0945 17.4455 42.2313 17.5828 42.2313 17.8576V32.0406H44.1464C44.4428 32.0406 44.5909 32.1779 44.5909 32.4527V33.9294C44.5909 34.2041 44.4428 34.3415 44.1464 34.3415Z" fill="black"/>
+            <path d="M61.909 34.3415H47.6482C47.3518 34.3415 47.2037 34.2041 47.2037 33.9294V32.5214C47.2037 32.0864 47.3746 31.6972 47.7166 31.3538L58.7969 19.7463H49.5292V22.3906C49.5292 22.6654 49.3924 22.8027 49.1188 22.8027H47.6482C47.3518 22.8027 47.2037 22.6654 47.2037 22.3906V17.8576C47.2037 17.5828 47.3518 17.4455 47.6482 17.4455H61.909C62.2054 17.4455 62.3536 17.5828 62.3536 17.8576V19.0595C62.3536 19.4716 62.1712 19.8379 61.8064 20.1584L50.5893 32.0406H59.9939V29.3276C59.9939 29.0529 60.1421 28.9155 60.4385 28.9155H61.909C62.2054 28.9155 62.3536 29.0529 62.3536 29.3276V33.9294C62.3536 34.2041 62.2054 34.3415 61.909 34.3415Z" fill="black"/>
+            <path d="M79.6428 34.3415H65.382C65.0856 34.3415 64.9374 34.2041 64.9374 33.9294V32.5214C64.9374 32.0864 65.1084 31.6972 65.4504 31.3538L76.5307 19.7463H67.2629V22.3906C67.2629 22.6654 67.1261 22.8027 66.8526 22.8027H65.382C65.0856 22.8027 64.9374 22.6654 64.9374 22.3906V17.8576C64.9374 17.5828 65.0856 17.4455 65.382 17.4455H79.6428C79.9392 17.4455 80.0874 17.5828 80.0874 17.8576V19.0595C80.0874 19.4716 79.905 19.8379 79.5402 20.1584L68.3231 32.0406H77.7277V29.3276C77.7277 29.0529 77.8759 28.9155 78.1722 28.9155H79.6428C79.9392 28.9155 80.0874 29.0529 80.0874 29.3276V33.9294C80.0874 34.2041 79.9392 34.3415 79.6428 34.3415Z" fill="black"/>
+            <path d="M89.6477 34.3415H83.1158C82.8194 34.3415 82.6712 34.2041 82.6712 33.9294V32.4527C82.6712 32.1779 82.8194 32.0406 83.1158 32.0406H84.9967V11.9852H83.1158C82.8194 11.9852 82.6712 11.8478 82.6712 11.5731V10.0964C82.6712 9.82166 82.8194 9.68429 83.1158 9.68429H86.9118C87.5274 9.68429 87.8352 9.97047 87.8352 10.5428V32.0406H89.6477C89.9441 32.0406 90.0923 32.1779 90.0923 32.4527V33.9294C90.0923 34.2041 89.9441 34.3415 89.6477 34.3415Z" fill="black"/>
+            <path d="M107.708 26.2369H95.3968C95.488 28.1371 96.0808 29.6023 97.1751 30.6326C98.2923 31.6628 99.5462 32.1779 100.937 32.1779C102.328 32.1779 103.513 31.8803 104.494 31.2851C105.497 30.6898 106.169 30.106 106.511 29.5337C106.694 29.3047 106.899 29.2704 107.127 29.4306L108.05 30.3579C108.187 30.4952 108.255 30.6211 108.255 30.7356C108.255 30.8272 108.198 30.9531 108.084 31.1134C107.993 31.2736 107.788 31.5255 107.469 31.8689C107.15 32.2123 106.694 32.6015 106.101 33.0365C105.531 33.4715 104.779 33.8378 103.844 34.1354C102.932 34.433 101.951 34.5819 100.903 34.5819C98.5089 34.5819 96.5025 33.792 94.8838 32.2123C93.2879 30.6326 92.4899 28.5149 92.4899 25.8591C92.4899 23.1805 93.2879 21.0742 94.8838 19.5403C96.4797 17.9835 98.4291 17.2051 100.732 17.2051C103.057 17.2051 104.881 17.9606 106.204 19.4716C107.526 20.9597 108.187 22.9744 108.187 25.5157C108.187 25.6073 108.187 25.6989 108.187 25.7904C108.187 26.0881 108.027 26.2369 107.708 26.2369ZM105.349 24.142C105.28 22.7226 104.836 21.5893 104.015 20.7422C103.194 19.8952 102.1 19.4716 100.732 19.4716C99.3638 19.4716 98.1897 19.8608 97.2093 20.6392C96.229 21.4176 95.6476 22.5852 95.4652 24.142H105.349Z" fill="black"/>
+            <path d="M140.934 34.3415H138.164C137.685 34.3415 137.138 33.9179 136.523 33.0708L135.804 32.0406C134.186 33.7348 132.1 34.5819 129.546 34.5819C127.015 34.5819 125.055 33.8836 123.664 32.487C122.273 31.0676 121.578 29.4535 121.578 27.6449C121.578 25.5157 122.296 23.8444 123.732 22.631C124.85 21.6924 126.081 20.9483 127.426 20.3988C125.875 18.5902 125.1 16.8159 125.1 15.0759C125.1 13.3359 125.636 11.9737 126.708 10.9893C127.802 9.98192 129.147 9.47824 130.743 9.47824C132.339 9.47824 133.684 9.93613 134.778 10.8519C135.896 11.7677 136.454 13.0498 136.454 14.6981C136.454 16.3465 135.975 17.6515 135.018 18.6131C134.083 19.5746 132.818 20.4561 131.222 21.2574L135.77 27.7479C136.363 26.5345 136.659 24.8174 136.659 22.5967C136.659 22.3219 136.808 22.1846 137.104 22.1846H141.618C141.892 22.1846 142.029 22.3219 142.029 22.5967V23.8673C142.029 24.142 141.892 24.2794 141.618 24.2794H139.087C138.996 26.3399 138.438 28.263 137.412 30.0488L138.78 31.9719H140.934C141.231 31.9719 141.379 32.1093 141.379 32.384V33.9294C141.379 34.2041 141.231 34.3415 140.934 34.3415ZM124.622 27.5762C124.622 28.927 125.112 30.0144 126.092 30.8386C127.072 31.6628 128.269 32.0749 129.683 32.0749C131.644 32.0749 133.194 31.3881 134.334 30.0144L128.931 22.425C126.924 23.295 125.625 24.3366 125.032 25.55C124.758 26.1682 124.622 26.8436 124.622 27.5762ZM133.513 16.6213C133.741 16.1405 133.855 15.5338 133.855 14.8012C133.855 14.0686 133.593 13.4161 133.069 12.8437C132.567 12.2485 131.849 11.9508 130.914 11.9508C130.002 11.9508 129.261 12.237 128.691 12.8094C128.121 13.3817 127.836 14.2174 127.836 15.3163C127.836 16.3923 128.509 17.7545 129.854 19.4029C131.883 18.51 133.103 17.5828 133.513 16.6213Z" fill="black"/>
+            <path d="M177.913 28.1257C178.027 28.2172 178.084 28.3317 178.084 28.4691C178.084 28.5835 178.027 28.7553 177.913 28.9842C177.822 29.1902 177.651 29.4764 177.4 29.8427C177.172 30.1861 176.75 30.6669 176.135 31.2851C175.519 31.9032 174.847 32.4412 174.117 32.8991C173.388 33.3341 172.419 33.7233 171.21 34.0667C170.025 34.4101 168.748 34.5819 167.38 34.5819C164.051 34.5819 161.27 33.4142 159.036 31.079C156.824 28.7438 155.718 25.6874 155.718 21.9099C155.718 18.1094 156.836 15.0873 159.07 12.8437C161.327 10.6001 164.04 9.47824 167.209 9.47824C170.743 9.47824 173.308 10.7031 174.904 13.1528L174.87 10.0964C174.824 9.82166 174.961 9.68429 175.28 9.68429H177.195C177.491 9.68429 177.64 9.82166 177.64 10.0964V17.5828C177.64 17.8805 177.491 18.0293 177.195 18.0293H175.04C174.767 18.0293 174.63 17.8805 174.63 17.5828V17.2738C174.63 16.2206 173.912 15.1331 172.476 14.0113C171.062 12.8666 169.295 12.2942 167.175 12.2942C165.055 12.2942 163.139 13.1413 161.43 14.8355C159.742 16.5068 158.899 18.8878 158.899 21.9785C158.899 25.0464 159.754 27.4388 161.464 29.1559C163.174 30.8501 165.18 31.6972 167.483 31.6972C169.968 31.6972 171.928 31.1363 173.365 30.0144C174.482 29.1445 175.303 28.263 175.827 27.3701C176.009 27.0267 176.226 26.958 176.477 27.1641L177.913 28.1257Z" fill="black"/>
+            <path d="M188.069 34.3415H181.537C181.24 34.3415 181.092 34.2041 181.092 33.9294V32.4527C181.092 32.1779 181.24 32.0406 181.537 32.0406H183.418V19.7463H181.537C181.24 19.7463 181.092 19.609 181.092 19.3342V17.8576C181.092 17.5828 181.24 17.4455 181.537 17.4455H185.846C186.119 17.4455 186.256 17.5828 186.256 17.8576V32.0406H188.069C188.365 32.0406 188.513 32.1779 188.513 32.4527V33.9294C188.513 34.2041 188.365 34.3415 188.069 34.3415ZM186.119 12.3629C186.507 12.7521 186.701 13.21 186.701 13.7366C186.701 14.2632 186.507 14.7096 186.119 15.0759C185.754 15.4422 185.31 15.6254 184.785 15.6254C184.261 15.6254 183.805 15.4422 183.418 15.0759C183.053 14.7096 182.87 14.2632 182.87 13.7366C182.87 13.21 183.053 12.7521 183.418 12.3629C183.805 11.9737 184.261 11.7791 184.785 11.7791C185.31 11.7791 185.754 11.9737 186.119 12.3629Z" fill="black"/>
+            <path d="M205.929 26.2369H193.617C193.708 28.1371 194.301 29.6023 195.396 30.6326C196.513 31.6628 197.767 32.1779 199.157 32.1779C200.548 32.1779 201.734 31.8803 202.714 31.2851C203.717 30.6898 204.39 30.106 204.732 29.5337C204.914 29.3047 205.119 29.2704 205.347 29.4306L206.271 30.3579C206.407 30.4952 206.476 30.6211 206.476 30.7356C206.476 30.8272 206.419 30.9531 206.305 31.1134C206.214 31.2736 206.008 31.5255 205.689 31.8689C205.37 32.2123 204.914 32.6015 204.321 33.0365C203.751 33.4715 202.999 33.8378 202.064 34.1354C201.152 34.433 200.172 34.5819 199.123 34.5819C196.729 34.5819 194.723 33.792 193.104 32.2123C191.508 30.6326 190.71 28.5149 190.71 25.8591C190.71 23.1805 191.508 21.0742 193.104 19.5403C194.7 17.9835 196.649 17.2051 198.952 17.2051C201.278 17.2051 203.102 17.9606 204.424 19.4716C205.746 20.9597 206.407 22.9744 206.407 25.5157C206.407 25.6073 206.407 25.6989 206.407 25.7904C206.407 26.0881 206.248 26.2369 205.929 26.2369ZM203.569 24.142C203.501 22.7226 203.056 21.5893 202.235 20.7422C201.414 19.8952 200.32 19.4716 198.952 19.4716C197.584 19.4716 196.41 19.8608 195.43 20.6392C194.449 21.4176 193.868 22.5852 193.686 24.142H203.569Z" fill="black"/>
+            <path d="M14.2681 34.3415H5.34232C5.04593 34.3415 4.89774 34.2041 4.89774 33.9294V32.178C4.89774 31.9032 5.04593 31.7659 5.34232 31.7659H7.9414V12.2599H5.34232C5.04593 12.2599 4.89774 12.1225 4.89774 11.8478V10.0964C4.89774 9.82166 5.04593 9.6843 5.34232 9.6843H15.8754C18.2921 9.6843 20.2643 10.394 21.7918 11.8135C23.3421 13.21 24.1173 15.1102 24.1173 17.5142C24.1173 19.8952 23.3649 21.7496 21.8602 23.0775C20.3554 24.3824 18.2351 25.0349 15.4993 25.0349H10.9167V31.7659H14.2681C14.5417 31.7659 14.6785 31.9032 14.6785 32.178V33.9294C14.6785 34.2041 14.5417 34.3415 14.2681 34.3415ZM10.9167 22.5967H15.3625C19.1927 22.5967 21.1078 20.9025 21.1078 17.5142C21.1078 15.7513 20.5606 14.4349 19.4663 13.5649C18.3947 12.6949 17.0382 12.2599 15.3967 12.2599H10.9167V22.5967Z" fill="white"/>
+            <path d="M44.1464 34.3415H41.1711C40.1907 34.3415 39.7006 33.8607 39.7006 32.8991V31.6285H39.598C38.6632 33.5974 36.8849 34.5819 34.263 34.5819C32.4391 34.5819 30.9914 34.0438 29.9198 32.9678C28.871 31.8689 28.3353 30.4151 28.3125 28.6064V19.7463H26.3632C26.0896 19.7463 25.9528 19.609 25.9528 19.3342V17.8576C25.9528 17.5828 26.0896 17.4455 26.3632 17.4455H29.6462C30.6266 17.4455 31.1167 17.9262 31.1167 18.8878V27.9196C31.1167 29.2475 31.4359 30.2777 32.0743 31.0103C32.7127 31.743 33.6474 32.1093 34.8786 32.1093C36.5429 32.1093 37.8538 31.4911 38.8114 30.2548C39.2218 29.7283 39.427 29.3734 39.427 29.1902V19.7463H37.5803C37.3067 19.7463 37.1699 19.609 37.1699 19.3342V17.8576C37.1699 17.5828 37.3067 17.4455 37.5803 17.4455H41.8209C42.0945 17.4455 42.2313 17.5828 42.2313 17.8576V32.0406H44.1464C44.4428 32.0406 44.5909 32.178 44.5909 32.4527V33.9294C44.5909 34.2041 44.4428 34.3415 44.1464 34.3415Z" fill="white"/>
+            <path d="M61.909 34.3415H47.6482C47.3518 34.3415 47.2037 34.2041 47.2037 33.9294V32.5214C47.2037 32.0864 47.3746 31.6972 47.7166 31.3538L58.7969 19.7463H49.5292V22.3906C49.5292 22.6654 49.3924 22.8027 49.1188 22.8027H47.6482C47.3518 22.8027 47.2037 22.6654 47.2037 22.3906V17.8576C47.2037 17.5828 47.3518 17.4455 47.6482 17.4455H61.909C62.2054 17.4455 62.3536 17.5828 62.3536 17.8576V19.0595C62.3536 19.4716 62.1712 19.8379 61.8064 20.1584L50.5893 32.0406H59.9939V29.3276C59.9939 29.0529 60.1421 28.9155 60.4385 28.9155H61.909C62.2054 28.9155 62.3536 29.0529 62.3536 29.3276V33.9294C62.3536 34.2041 62.2054 34.3415 61.909 34.3415Z" fill="white"/>
+            <path d="M79.6428 34.3415H65.382C65.0856 34.3415 64.9374 34.2041 64.9374 33.9294V32.5214C64.9374 32.0864 65.1084 31.6972 65.4504 31.3538L76.5307 19.7463H67.2629V22.3906C67.2629 22.6654 67.1261 22.8027 66.8526 22.8027H65.382C65.0856 22.8027 64.9374 22.6654 64.9374 22.3906V17.8576C64.9374 17.5828 65.0856 17.4455 65.382 17.4455H79.6428C79.9392 17.4455 80.0874 17.5828 80.0874 17.8576V19.0595C80.0874 19.4716 79.905 19.8379 79.5402 20.1584L68.3231 32.0406H77.7277V29.3276C77.7277 29.0529 77.8759 28.9155 78.1722 28.9155H79.6428C79.9392 28.9155 80.0874 29.0529 80.0874 29.3276V33.9294C80.0874 34.2041 79.9392 34.3415 79.6428 34.3415Z" fill="white"/>
+            <path d="M89.6477 34.3415H83.1158C82.8194 34.3415 82.6712 34.2041 82.6712 33.9294V32.4527C82.6712 32.178 82.8194 32.0406 83.1158 32.0406H84.9967V11.9852H83.1158C82.8194 11.9852 82.6712 11.8478 82.6712 11.5731V10.0964C82.6712 9.82166 82.8194 9.6843 83.1158 9.6843H86.9118C87.5274 9.6843 87.8352 9.97047 87.8352 10.5428V32.0406H89.6477C89.9441 32.0406 90.0923 32.178 90.0923 32.4527V33.9294C90.0923 34.2041 89.9441 34.3415 89.6477 34.3415Z" fill="white"/>
+            <path d="M107.708 26.2369H95.3968C95.488 28.1371 96.0808 29.6023 97.1751 30.6326C98.2923 31.6628 99.5462 32.178 100.937 32.178C102.328 32.178 103.513 31.8803 104.494 31.2851C105.497 30.6898 106.169 30.106 106.511 29.5337C106.694 29.3047 106.899 29.2704 107.127 29.4306L108.05 30.3579C108.187 30.4952 108.255 30.6211 108.255 30.7356C108.255 30.8272 108.198 30.9531 108.084 31.1134C107.993 31.2736 107.788 31.5255 107.469 31.8689C107.15 32.2123 106.694 32.6015 106.101 33.0365C105.531 33.4715 104.779 33.8378 103.844 34.1354C102.932 34.433 101.951 34.5819 100.903 34.5819C98.5089 34.5819 96.5025 33.792 94.8838 32.2123C93.2879 30.6326 92.4899 28.5149 92.4899 25.8591C92.4899 23.1805 93.2879 21.0742 94.8838 19.5403C96.4797 17.9835 98.4291 17.2051 100.732 17.2051C103.057 17.2051 104.881 17.9606 106.204 19.4716C107.526 20.9597 108.187 22.9744 108.187 25.5157C108.187 25.6073 108.187 25.6989 108.187 25.7904C108.187 26.0881 108.027 26.2369 107.708 26.2369ZM105.349 24.1421C105.28 22.7226 104.836 21.5893 104.015 20.7422C103.194 19.8952 102.1 19.4716 100.732 19.4716C99.3638 19.4716 98.1897 19.8608 97.2093 20.6392C96.229 21.4176 95.6476 22.5852 95.4652 24.1421H105.349Z" fill="white"/>
+            </svg>
+            
+        <h1 class="histoire_h1">Rubik’s Cube</h1>
+        <h2>Histoire</h2>
+
+        <div class="container">
+            <div class="rubiks-cube">
+                <div class="top-clone">
+                    <div class="column-face top clone-left">
+                        <div class="left-one"></div>
+                        <div class="left-two"></div>
+                        <div class="left-three"></div>
+                    </div>
+
+                    <div class="column-face top clone-middle">
+                        <div class="middle-one"></div>
+                        <div class="middle-two"></div>
+                        <div class="middle-three"></div>
+                    </div>
+
+                    <div class="column-face top clone-right">
+                        <div class="right-one"></div>
+                        <div class="right-two"></div>
+                        <div class="right-three"></div>
+                    </div>
+                </div>
+
+                <div class="top-row">
+                    <div class="row-face front">
+                        <div class="front-one"></div>
+                        <div class="front-two"></div>
+                        <div class="front-three"></div>
+                    </div>
+
+                    <div class="row-face left">
+                        <div class="left-one"></div>
+                        <div class="left-two"></div>
+                        <div class="left-three"></div>
+                    </div>
+
+                    <div class="row-face back">
+                        <div class="back-one"></div>
+                        <div class="back-two"></div>
+                        <div class="back-three"></div>
+                    </div>
+
+                    <div class="row-face right">
+                        <div class="right-one"></div>
+                        <div class="right-two"></div>
+                        <div class="right-three"></div>
+                    </div>
+                </div>
+
+                <div class="middle-row">
+                    <div class="row-face front">
+                        <div class="front-one"></div>
+                        <div class="front-two"></div>
+                        <div class="front-three"></div>
+                    </div>
+
+                    <div class="row-face left">
+                        <div class="left-one"></div>
+                        <div class="left-two"></div>
+                        <div class="left-three"></div>
+                    </div>
+
+                    <div class="row-face back">
+                        <div class="back-one"></div>
+                        <div class="back-two"></div>
+                        <div class="back-three"></div>
+                    </div>
+
+                    <div class="row-face right">
+                        <div class="right-one"></div>
+                        <div class="right-two"></div>
+                        <div class="right-three"></div>
+                    </div>
+                </div>
+
+                <div class="bottom-row">
+                    <div class="row-face right">
+                        <div class="right-one"></div>
+                        <div class="right-two"></div>
+                        <div class="right-three"></div>
+                    </div>
+
+                    <div class="row-face left">
+                        <div class="left-one"></div>
+                        <div class="left-two"></div>
+                        <div class="left-three"></div>
+                    </div>
+                </div>
+
+                <div class="left-column">
+                    <div class="column-face front">
+                        <div class="front-one"></div>
+                        <div class="front-two"></div>
+                        <div class="front-three"></div>
+                    </div>
+
+                    <div class="column-face back">
+                        <div class="back-one"></div>
+                        <div class="back-two"></div>
+                        <div class="back-three"></div>
+                    </div>
+
+                    <div class="column-face bottom">
+                        <div class="bottom-one"></div>
+                        <div class="bottom-two"></div>
+                        <div class="bottom-three"></div>
+                    </div>
+                </div>
+
+                <div class="middle-column">
+                    <div class="column-face front">
+                        <div class="front-one"></div>
+                        <div class="front-two"></div>
+                        <div class="front-three"></div>
+                    </div>
+
+                    <div class="column-face top">
+                        <div class="top-one"></div>
+                        <div class="top-two"></div>
+                        <div class="top-three"></div>
+                    </div>
+
+                    <div class="column-face back">
+                        <div class="back-one"></div>
+                        <div class="back-two"></div>
+                        <div class="back-three"></div>
+                    </div>
+
+                    <div class="column-face bottom">
+                        <div class="bottom-one"></div>
+                        <div class="bottom-two"></div>
+                        <div class="bottom-three"></div>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <div class="column-face front">
+                        <div class="front-one"></div>
+                        <div class="front-two"></div>
+                        <div class="front-three"></div>
+                    </div>
+
+                    <div class="column-face back">
+                        <div class="back-one"></div>
+                        <div class="back-two"></div>
+                        <div class="back-three"></div>
+                    </div>
+
+                    <div class="column-face bottom">
+                        <div class="bottom-one"></div>
+                        <div class="bottom-two"></div>
+                        <div class="bottom-three"></div>
+                    </div>
+                </div>   
+            </div>
+        </div>
+        <p class="histoire_text">Le Rubik’s Cube est créé en 1974 par le professeur de design hongrois Ernő Rubik. Il a crée le Rubik’s Cube dans le but que ses étudiants comprennent le mécanisme de l’objet et qu’ils s’intéressent à la géométrie en trois dimensions. Ernő Rubik a lui même mit un mois pour le résoudre. Après avoir déposé un brevet au nom de “Magic Cube” en 1975, il s’associe à l’entreprise de jouets Ideal Toy en 1980 pour le commercialiser. La société décide de l’appeler “Rubik’s Cube” et c’est par la suite que le casse-tête connait son plus grand succès. Plus de cent millions de Rubik’s Cube sont vendus entre 1980 et 1982 ce qui a permit de créer la première compétition de Rubik’s Cube dans le monde, à Budapest, qui est remporté par Minh Thai avec un temps record de 22.5 secondes. Aujourd’hui, le casse-tête est sous license et est distribué par de nombreuses entreprises telles que Jumbo en Belgique ou Win Games en France.</p>
+
+    <div class="container4lignes"><div class="lignes ligne1"></div><div class="lignes ligne2"></div><div class="lignes ligne3"></div><div class="lignes ligne4"></div></div>
+    
+    </header>
+        <article class="etape1" id="resoudre">
+            <h2 class="etape1_h2">Comment résoudre un Rubik’s Cube ?</h2>
+            <h3 class="etape1_h3">Étape 1 : Première ligne</h3>
+            <p class="etapebefore_text">
+                Pour réaliser le Rubik’s Cube, il faut dans un premier temps réaliser la première ligne. En effet, on choisit la couleur de la face que l’on veut résoudre en premier (ici, nous choisirons le blanc). Ensuite, on réalise la croix blanche; ce n’est pas compliqué, il n’y a pas de technique particulière qui permet de faire cette croix. Mais avant de réaliser cette croix, il est important de savoir que les carrés situés au centre ne bougent jamais : le blanc est opposé au jaune, le orange est opposé au rouge et le bleu est opposé au vert. Pour débuter la croix, il faut ainsi partir de la pièce centrale blanche. Il faut bien prendre en compte la pièce centrale des faces adjacentes pour bien placer les extrémités de la croix       (figure 1).
+                <br>
+Après réalisation de la croix, il faut placer les coins de façon à terminer cette première face. Pour placer les coins, il existe un algorithme qui aidera à placer ceux-ci. Cet algorithme a pour fonction de faire remonter un coin vers la face blanche. Avant de réaliser l’algorithme, il faut plusieurs prérequis. Dans un premier temps, il faut faire en sorte que la face blanche soit orientée vers le sol. Ensuite, il faut que la pièce (coin) que l’on veut positionner sur la face soit orientée comme sur l’illustration ci-contre ( figure 2 ).
+            </p>
+            <p class="etape1_text2">Algorithme qui permet de bien placer les coins :</p>
+            
+            <div class="container_coup container_coup_float">
+                <p class="coup_text coup_numero1 coup_droiteVersHaut">Un coup vers le haut ( colone de droite )</p>
+                <p class="coup_text coup_numero2 coup_hautVersGauche">Un coup vers la gauche ( ligne du haut )</p>
+                <p class="coup_text coup_numero3 coup_droiteVersBas">Un coup vers le bas ( colone de droite )</p>
+                <p class="coup_text coup_numero4 coup_hautVersDroite">Un coup vers la droite ( ligne du haut )</p>
+            </div>
+
+            <div class="container_img">
+                <img class="etape_1_container_img_item" src="media/rubiks1.png" alt="">
+                <img class="etape_1_container_img_item" src="media/rubiks_etape1_2.png" alt="">
+            </div>
+
+            <div class="video_container">
+                <iframe class="video etape1_video"
+                src="https://www.youtube.com/embed/brRNwr_VQ5c"  allowfullscreen>
+            </iframe>
+            </div>
+            
+
+        </article>
+
+        <article class="etape2">
+            <h3>Étape 2 : Deuxième ligne</h3>
+            <p class="etapebefore_text">Après avoir réalisé la première ligne avec les coins bien placés, on obtient donc une face ( blanche ). Chaque faces adjacentes à la blanche ont leur première ligne de constituées ainsi que le pièce centrale qui forme presque un ‘T’.<br>
+                Pour cette étape, il suffira d’éxecuter un algorithme. Mais cet algorithme nécessite des prérequis :  il faut qu’une face puisse former un ‘T’ (voir figure 1 ci-dessous), et, la mettre face à soit avec la face blanche vers le ciel. Quand vous avez tous ces prérequis, vous avez juste à faire les mouvements demandés.<br><br>
+                
+                Note :  La pièce qui constitue le bas du ‘T’ doit avoir l’arête de la même couleur que la face de droite (voir figure 2 ci-dessous).</p>
+
+                
+            
+            <div class="container_coup container_coup_float">
+                <p class="coup_text coup_numero1 coup_basVersGauche">Bas vers la gauche</p>
+                <p class="coup_text coup_numero2 coup_droiteVersBas">Droite vers le bas</p>
+                <p class="coup_text coup_numero3 coup_basVersDroite">Bas vers la droite</p>            
+                <p class="coup_text coup_numero4 coup_droiteVersHaut">Droite vers le haut</p>
+                <p class="coup_text coup_numero5 coup_basVersDroite">Bas vers la droite</p>
+                <p class="coup_text coup_numero6 coup_faceAvantVersDroite">Face avant vers la droite</p>
+                <p class="coup_text coup_numero7 coup_basVersGauche">Bas vers la gauche</p>            
+                <p class="coup_text coup_numero8 coup_faceAvantVersGauche">Face avant vers la gauche</p>
+            </div>
+            <div>
+
+           
+            <div class="container_img">
+                    <img src="media/rubiks_etape2_1.png" alt="">
+                    <img src="media/rubiks_etape2_2.png" alt="">
+                </div>
+            <iframe class="video etape2_video"
+                src="https://www.youtube.com/embed/bjq_5Oo-YAk" allowfullscreen>
+            </iframe>
+        </div>
+        </article>
+
+        <article class="etape3">
+            <h3 class="etape3_h3">Étape 3 : Troisième ligne</h3>
+            <p class="etape3_text">Cette dernière étape se constitue de 4 sous-étapes, qui permettent d’achever le Rubik’s Cube. En effet, afin de réussir cete troisième ligne, il faut : </p>
+            <p class="etape3_soustext">- Réaliser la croix <br>
+                - Orienter les arêtes de la croix<br>
+                - Placer les coins aux bons endroits<br>
+                - Orienter les coins</p>
+            <h3>- La croix jaune :</h3>
+
+            <div class="etape3_container">
+                <img class="etape3_container_img" src="media/rubiks_croixjaune.png" alt="">
+            
+                <p class="etape3_text etape3_container_text">Après avoir réalisé les deux lignes, vous obtenez deux formes possible là où doit se situer la face jaune : un J ou une barre. Selon la forme obtenue, l’algorithme pour créer la croix jaune sera différent.</p>
+            </div>
+
+            <div class="container_text_img_coup">
+                <div class="container_text_img">
+                    <p class='etape3_text item_text'><strong>La barre</strong> :<br>
+                        Il faut prendre le Rubik’s Cube de façon à ce que la barre soit positionnée horizontalement face à vous ( voir illustration ci-dessous).</p>
+
+                    <img class="item_img" src="media/rubiks_barre.png" alt="">
+                </div>
+                <div class="container_coup item_coup">
+                    <p class="coup_text coup_numero1 coup_faceAvantVersDroite">Face avant vers la droite</p>
+                    <p class="coup_text coup_numero2 coup_droiteVersHaut">Droite vers le haut</p>
+                    <p class="coup_text coup_numero3 coup_hautVersGauche">Haut vers la gauche</p>
+                    <p class="coup_text coup_numero4 coup_droiteVersBas">Droite vers le bas</p>
+                    <p class="coup_text coup_numero5 coup_hautVersDroite">Haut vers la droite</p>
+                    <p class="coup_text coup_numero6 coup_faceAvantVersGauche">Face avant vers la gauche</p>
+                </div>
+            </div>
+
+            <div class="container_text_img_coup">
+                <div class="container_text_img">
+                    <p class='etape3_text item_text'><strong>Le J</strong> :<br>
+                        Il faut prendre le Rubik’s Cube de façon à ce que le J soit placé dans le coin supérieur gauche de la face jaune (voir illustration J).</p>
+
+                    <img class="item_img" src="media/rubiks_J.png" alt="">
+                </div>
+                <div class="container_coup item_coup">
+                    <p class="coup_text coup_numero1 coup_faceAvantVersDroite">Face avant vers la droite</p>
+                    <p class="coup_text coup_numero2 coup_hautVersGauche">Haut vers la gauche</p>
+                    <p class="coup_text coup_numero3 coup_droiteVersHaut">Droite vers le haut</p>
+                    <p class="coup_text coup_numero4 coup_hautVersDroite">Haut vers la droite</p>
+                    <p class="coup_text coup_numero5 coup_droiteVersBas">Droite vers le bas</p>
+                    <p class="coup_text coup_numero6 coup_faceAvantVersGauche">Face avant vers la gauche</p>
+                </div>
+            </div>
+            <iframe class="video"
+            src="https://www.youtube.com/embed/w-V3A7fZzaM" allowfullscreen>
+        </iframe>
+
+        <h3>- Placement des arêtes :</h3>
+
+        <div class="displayFlex">
+            <img class="item_img" src="media/placement_arrete.png" alt="">
+
+            <p class="etape3_text item_text">Après avoir réalisé la croix jaune, il faut bien placer les arêtes des extrémités de la croix de façon à ce que la couleur adjacente à l’extrémité de la croix jaune soit la même que les deux lignes situées en dessous. <br>
+                Pour bien les positionner, il faut faire en sorte qu’au moins une arrête soit bien positionnée. Ainsi, il faut prendre le cube de façon à ce que cette arête soit face à vous avec la face jaune vers le ciel. <br>
+                L’algorithme suivant va ainsi vous permettre de bien placer les arêtes. Celui-ci décale toutes les arêtes d’un quart de tour excepté celle située face à vous initialement. La croix sera bien orientée avec les arêtes aux bons endroits après quelques manipulations.</p>
+        </div>
+
+        <div class="displayFlex">
+                <div class="container_coup item_coupLessPadding">
+                    <p class="coup_text coup_numero1 coup_droiteVersHaut">Droite vers le haut</p>
+                    <p class="coup_text coup_numero2 coup_hautVersGauche">Haut vers la gauche (×2)</p>
+                    <p class="coup_text coup_numero3 coup_droiteVersBas">Droite vers le bas</p>
+                    <p class="coup_text coup_numero4 coup_hautVersDroite">Haut vers la droite</p>
+                    <p class="coup_text coup_numero5 coup_droiteVersHaut">Droite vers le haut</p>
+                    <p class="coup_text coup_numero6 coup_hautVersDroite">Haut vers la droite</p>
+                    <p class="coup_text coup_numero7 coup_droiteVersBas">Droite vers le bas</p>
+                </div>
+
+                <iframe class="video"
+                src="https://www.youtube.com/embed/--a22BPUWMo" allowfullscreen>
+            </iframe>
+        </div>
+
+        <h3>- Placement des coins :</h3>
+
+        <div class="displayFlex">
+
+            <img  class="item_img" src="media/placement_coins_1.png" alt="">
+
+            <p class="etape3_text item_text">Après avoir bien orienté la croix, vous devez désormais placer les coins aux bons endroits. On ne se soucie de leur orientation pour cette étape. Pour s’assurer du bon déroulement de l’étape, il faut repérer un coin bien positionné (on rappel que l’orientation de la pièce n’influe pas sur la suite). Une fois cela fait, il faut faire en sorte que ce coin soit situé en haut à droite (coin supérieur droit) de la face et que la face jaune soit toujours en haut. Quand tout ceci est fait, il ne vous reste plus qu’à réaliser l’algorithme suivant :</p>
+        </div>
+
+        <div class="displayFlex">
+            <div class="container_coup item_coupLessPadding">
+                <p class="coup_text coup_numero1 coup_gaucheVersHaut">Gauche vers le haut</p>
+                <p class="coup_text coup_numero2 coup_hautVersGauche">Haut vers la gauche</p>
+                <p class="coup_text coup_numero3 coup_droiteVersHaut">Droite vers le haut</p>
+                <p class="coup_text coup_numero4 coup_hautVersDroite">Haut vers la droite</p>
+                <p class="coup_text coup_numero5 coup_gaucheVersBas">Gauche vers le bas</p>
+                <p class="coup_text coup_numero6 coup_hautVersGauche">Haut vers la gauche</p>
+                <p class="coup_text coup_numero7 coup_droiteVersBas">Droite vers le bas</p>
+                <p class="coup_text coup_numero8 coup_hautVersDroite">Haut vers la droite</p>
+            </div>
+
+            <iframe class="video"
+                src="https://www.youtube.com/embed/bf3paXKbnLw"  allowfullscreen>
+            </iframe>
+        </div>
+        <h3>- Orientation des coins :</h3>
+
+        <div class="displayFlex">
+            <img class="item_img" src="media/rubiks_orientationdescoins.png" alt="">
+
+            <p class="etape3_text item_text">Vous voici arrivé à la toute dernière étape pour réaliser le Rubik’s Cube ! Pour bien orienter les coins, il faut placer deux coins mals orientés sur la face de droite et réaliser l’algorithme suivant.</p>
+        </div>
+
+        <div class="displayFlex">
+            <div class="container_coup item_coupLessPadding">
+                <p class="coup_text coup_numero1 coup_droiteVersHaut">Droite vers le haut</p>
+                <p class="coup_text coup_numero2 coup_hautVersGauche">Haut vers la gauche  (×2)</p>
+                <p class="coup_text coup_numero3 coup_droiteVersBas">Droite vers le bas</p>
+                <p class="coup_text coup_numero4 coup_hautVersDroite">Haut vers la droite</p>
+                <p class="coup_text coup_numero5 coup_droiteVersHaut">Droite vers le haut</p>
+                <p class="coup_text coup_numero6 coup_hautVersDroite">Haut vers la droite</p>
+                <p class="coup_text coup_numero7 coup_droiteVersBas">Droite vers le bas</p>
+                <p class="coup_text coup_numero8 coup_gaucheVersHaut">Gauche vers le haut</p>
+                <p class="coup_text coup_numero9 coup_hautVersGauche">Haut vers la gauche  (×2)</p>
+                <p class="coup_text coup_numero10 coup_gaucheVersBas">Gauche vers le bas</p>
+                <p class="coup_text coup_numero11 coup_hautVersGauche">Haut vers la gauche</p>
+                <p class="coup_text coup_numero12 coup_gaucheVersHaut">Gauche vers le haut</p>
+                <p class="coup_text coup_numero13 coup_hautVersGauche">Haut vers la gauche</p>
+                <p class="coup_text coup_numero14 coup_gaucheVersBas">Gauche vers le bas</p>
+            </div>
+
+            <iframe class="video"
+            src="https://www.youtube.com/embed/AkDt9T-VLZU" allowfullscreen>
+        </iframe>
+    </div>
+
+    <p class="etape3_text text_felication">Bravo ! Vous avez réussi le Rubik’s Cube sans accrocs, il suffit maintenent de bien connaître les différents algorithme.</p>
+    
+    <div class="container4lignes"><div class="lignes ligne1 ligneColorBlue"></div><div class="lignes ligne2"></div><div class="lignes ligne3"></div><div class="lignes ligne4"></div></div>
+
+        </article>
+
+    <article class="chronometre" id="timer">
+        <h3 class="chrono_h3">Chronomètre</h3>
+        <div class="chrono_container">
+            <p class="chrono_text"><span id="chrono_minutes">00</span> : <span id="chrono_secondes">00</span> : <span id="chrono_centiemes">00</span></p>
+
+            <div class="chrono_button_container">
+
+
+                <svg class="chrono_button"  id="chrono_button_play" width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="91" height="91" rx="20" fill="#007527"/>
+                    <path d="M73 46L23.5 78.0429L23.5 13.9571L73 46Z" fill="white"/>
+                    </svg>
+
+
+                <svg class="chrono_button" id="chrono_button_pause" width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="91" height="91" rx="20" fill="#007527"/>
+                        <line x1="32.5" y1="14" x2="32.5" y2="74" stroke="white" stroke-width="11"/>
+                        <line x1="60.5" y1="14" x2="60.5" y2="74" stroke="white" stroke-width="11"/>
+                    </svg>
+                        
+
+                    <svg class="chrono_button" id="chrono_button_time" width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="91" height="91" rx="20" fill="#007527"/>
+                        <path d="M51.5654 19.304C48.0629 18.4701 44.6855 18.9566 43.4346 19.304V14.6132H41.5583C40.5576 14.6132 40.1684 13.8487 40.0989 13.4665V9.40117C40.0989 8.81745 41.2803 8.25454 41.871 8.04605C45.5194 8.0113 52.9413 7.96265 53.4417 8.04605C53.942 8.12944 54.5536 8.98421 54.7968 9.40117C54.8316 10.5131 54.8802 12.8828 54.7968 13.4665C54.7134 14.0503 53.8587 14.6132 53.4417 14.8217H51.5654V19.304Z" fill="white"/>
+                        <circle cx="47.5" cy="50.4297" r="26.5" stroke="white" stroke-width="6"/>
+                        <path d="M45 52.8905V31C58.176 31 64.3887 41.0071 65.8481 46.0106L45 52.8905Z" fill="white"/>
+                        <path d="M69.3551 25.002L68 26.3572L71.023 29.2759L72.2739 28.025L73.7332 29.4844C76.5686 27.1494 76.3045 24.9673 75.7138 24.2724C75.1926 23.6817 73.7749 22.2501 72.2739 21.2494C70.7728 20.2487 68.7992 22.5003 68 23.7511L69.3551 25.002Z" fill="white"/>
+                        </svg>
+                        
+
+                    <svg class="chrono_button" id="chrono_button_stop" width="91" height="91" viewBox="0 0 91 91" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="91" height="91" rx="20" fill="#007527"/>
+                            <rect x="21" y="21" width="49" height="49" rx="14" fill="white"/>
+                        </svg>
+                       
+            </div>
+        </div>
+    </article>
+    <footer>Copyright © 2020 Puzzle&Cie Brand Ltd. All Rights Reserved</footer>
+        
+    <script src="js/main.js"></script>
+
+</body> 
